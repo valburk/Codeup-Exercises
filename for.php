@@ -31,6 +31,9 @@
 $min = trim(fgets(STDIN));
 $max = trim(fgets(STDIN));
 $inc = trim(fgets(STDIN));
+if (!is_numeric($inc)){
+	 $inc = 1;
+}
 
 for ($i = $min; $i <= $max; $i += $inc) {
     echo "$i\n";
