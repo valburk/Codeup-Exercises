@@ -26,4 +26,11 @@ function divide($a, $b)
 return $a/$b; // Add code here
 }
 echo divide(6, 2);
+
+
+function modulus($a, $b)
+{
+return $a % $b; // Add code here
+}
+echo modulus(6, 4);
 // Add code to test your functions here
