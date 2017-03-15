@@ -35,12 +35,13 @@ $things = array('Sgt. Pepper', "11", null, array(1,2,3), 3.14, "12 + 7", false, 
 
 foreach ($things as $item) {
     if (is_array($item)){
-    	echo "an array containing: ";
-    	echo"($item[0], ";
-    	echo"$item[1], ";
-    	echo"$item[2]) \n";
+    	echo "an array containing: (";
+    	foreach ($item as $itemarray) {
+    		echo "$itemarray,";
+    	}
+ 		echo ") \n";
   
 	}elseif (!is_array($item)){
-	echo "$item\n";
+		echo "$item\n";
 	}
 }
