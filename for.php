@@ -30,7 +30,8 @@
 
 $min = trim(fgets(STDIN));
 $max = trim(fgets(STDIN));
+$inc = trim(fgets(STDIN));
 
-for ($i = $min; $i <= $max; $i++) {
+for ($i = $min; $i <= $max; $i += $inc) {
     echo "$i\n";
 }
