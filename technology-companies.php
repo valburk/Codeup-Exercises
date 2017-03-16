@@ -48,8 +48,19 @@ $companies = [
 // print_r($companies);
 
 
-foreach ($companies as $company) {
-    asort($company);
-    print_r($company);
+// foreach ($companies as $company) {
+//     asort($company);
+//     print_r($company);
 
-    }
+//     }
+
+
+   
+    foreach ($companies as $company => $people) {
+            echo "$company:\n";
+             sort($companies);
+            foreach ($people as $key) {
+                echo "$key\n";
+            }
+        }
+    
