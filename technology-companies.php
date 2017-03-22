@@ -48,9 +48,9 @@ $companies = [
 // print_r($companies);
 
 
-foreach ($companies as $company) {
-    asort($company);
-    print_r($company);
+foreach ($companies as $company => $employees) {
+    sort($employees);
+    $companies[$company] = $employees;
 
     }
 
